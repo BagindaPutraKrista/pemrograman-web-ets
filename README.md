@@ -1,6 +1,3 @@
-# pemrograman-web-ets
-Tugas ETS Pemrograman Web
-
 ## Introduction
 
 Veteran Marketplace adalah platform jual-beli barang bekas berbasis web untuk mahasiswa UPN "Veteran" Jawa Timur. Platform ini memungkinkan mahasiswa untuk menjual dan membeli barang bekas secara sesama mahasiswa, dilengkapi dengan fitur chat realtime, wishlist, notifikasi, sistem ulasan, dan konfirmasi transaksi. Dibangun menggunakan HTML + Bootstrap (frontend), PHP native (backend), MySQL (database), dan AJAX polling untuk chat realtime. Proyek ini merupakan tugas UTS mata kuliah Pemrograman Web, Fakultas Ilmu Komputer UPN Veteran Jawa Timur.
