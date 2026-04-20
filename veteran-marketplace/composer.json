@@ -1,0 +1,21 @@
+{
+    "name": "upn/veteran-marketplace",
+    "description": "Veteran Marketplace - Platform jual-beli barang bekas mahasiswa UPN Veteran Jawa Timur",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "files": [
+            "includes/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

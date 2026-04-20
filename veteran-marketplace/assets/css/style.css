@@ -1,0 +1,200 @@
+/* ============================================================
+   Veteran Marketplace – Custom Styles
+   Primary color: UPN Green #2d6a4f
+   ============================================================ */
+
+/* ── CSS Variables ─────────────────────────────────────────── */
+:root {
+    --color-primary:       #2d6a4f;
+    --color-primary-dark:  #1b4332;
+    --color-primary-light: #52b788;
+    --color-secondary:     #f4a261;
+    --color-bg:            #f8f9fa;
+    --color-text:          #212529;
+    --color-muted:         #6c757d;
+    --color-border:        #dee2e6;
+    --badge-tersedia-bg:   #d1fae5;
+    --badge-tersedia-text: #065f46;
+    --badge-dipesan-bg:    #fef3c7;
+    --badge-dipesan-text:  #92400e;
+    --badge-terjual-bg:    #fee2e2;
+    --badge-terjual-text:  #991b1b;
+}
+
+/* ── Global ─────────────────────────────────────────────────── */
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+}
+
+/* ── Navbar ─────────────────────────────────────────────────── */
+.navbar-brand {
+    font-weight: 700;
+    color: var(--color-primary) !important;
+}
+
+.btn-primary,
+.bg-primary {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark) !important;
+    border-color: var(--color-primary-dark) !important;
+}
+
+/* ── Badge Status Item ──────────────────────────────────────── */
+.badge-tersedia {
+    background-color: var(--badge-tersedia-bg);
+    color: var(--badge-tersedia-text);
+    font-size: 0.75rem;
+    padding: 0.25em 0.6em;
+    border-radius: 0.375rem;
+    font-weight: 600;
+}
+
+.badge-dipesan {
+    background-color: var(--badge-dipesan-bg);
+    color: var(--badge-dipesan-text);
+    font-size: 0.75rem;
+    padding: 0.25em 0.6em;
+    border-radius: 0.375rem;
+    font-weight: 600;
+}
+
+.badge-terjual {
+    background-color: var(--badge-terjual-bg);
+    color: var(--badge-terjual-text);
+    font-size: 0.75rem;
+    padding: 0.25em 0.6em;
+    border-radius: 0.375rem;
+    font-weight: 600;
+}
+
+/* ── Item Card ──────────────────────────────────────────────── */
+.item-card {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    cursor: pointer;
+}
+
+.item-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item-card img {
+    object-fit: cover;
+    height: 180px;
+    width: 100%;
+}
+
+/* ── Chat Room List ─────────────────────────────────────────── */
+.room-link:hover {
+    background: rgba(45,106,79,0.05) !important;
+}
+.room-link.active-room {
+    background: rgba(45,106,79,0.08) !important;
+    border-left: 3px solid var(--color-primary);
+}
+
+/* ── Chat Bubbles ───────────────────────────────────────────── */
+.chat-bubble-wrapper {
+    display: flex;
+    margin-bottom: 0.5rem;
+    align-items: flex-end;
+}
+
+.chat-bubble-wrapper.sent {
+    justify-content: flex-end;
+}
+
+.chat-bubble-wrapper.received {
+    justify-content: flex-start;
+}
+
+.chat-bubble {
+    padding: 0.45rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+.chat-bubble.sent {
+    background-color: var(--color-primary);
+    color: #fff;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.chat-bubble.received {
+    background-color: #e9ecef;
+    color: var(--color-text);
+    border-bottom-left-radius: 0.25rem;
+}
+
+.chat-timestamp {
+    font-size: 0.7rem;
+    color: var(--color-muted);
+    margin-top: 0.15rem;
+}
+
+.chat-timestamp.sent {
+    text-align: right;
+}
+
+/* ── Star Rating ────────────────────────────────────────────── */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.1rem;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 1.6rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+.star-rating input[type="radio"]:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #f59e0b;
+}
+
+/* Static star display (read-only) */
+.stars-display {
+    color: #f59e0b;
+    font-size: 1rem;
+}
+
+.stars-display .star-empty {
+    color: #ccc;
+}
+
+/* ── Utility ────────────────────────────────────────────────── */
+.text-primary {
+    color: var(--color-primary) !important;
+}
+
+.border-primary {
+    border-color: var(--color-primary) !important;
+}
